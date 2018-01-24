@@ -17,9 +17,8 @@ https://github.com/PointCloudLibrary/pcl
 To see how to install the library and its dependencies, see the following tutorial:
 http://pointclouds.org/documentation/tutorials/compiling_pcl_macosx.php
 
-_Note: VTK library could not be installed correctly using the instructions in the above tutorial. Please refer to the following document for installing the VTK library:
+*Note: VTK library could not be installed correctly using the instructions in the above tutorial. Please refer to the following document for installing the VTK library:*
 https://alitheon.atlassian.net/wiki/spaces/IE/pages/136806401/Point+Cloud+Data+Analysis+Pipeline
-_
 
 ## Astra SDK:
 
