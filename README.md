@@ -7,7 +7,7 @@ https://github.com/orbbec/astra
 
 The SDK is included in the project as a git submodule. Read the installation guide to learn more about using the SDK.
 
-#Setup
+# Setup
 
 ## Point Cloud Library (PCL):
 
@@ -17,26 +17,26 @@ https://github.com/PointCloudLibrary/pcl
 To see how to install the library and its dependencies, see the following tutorial:
 http://pointclouds.org/documentation/tutorials/compiling_pcl_macosx.php
 
-*Note: VTK library could not be installed correctly using the instructions in the above tutorial. Please refer to the folowing document for installing VTK library:
+_Note: VTK library could not be installed correctly using the instructions in the above tutorial. Please refer to the following document for installing the VTK library:
 https://alitheon.atlassian.net/wiki/spaces/IE/pages/136806401/Point+Cloud+Data+Analysis+Pipeline
-*
+_
 
 ## Astra SDK:
 
-The Orbbec Astra SDK is included as a submodule in the project. After you have cloned the repo, simply run the following two commands to get the submodule:
+The Orbbec Astra SDK is included as a submodule in this project. After you have cloned the repo, simply run the following two commands to fetch the submodule:
 
 ```
 git submodule init
 git submodule update
 ```
 
-If you want to update the Astra SDK, you can update the submodule as follows:
+To pull the latest version of the Astra SDK, you can update the submodule as follows:
 
 ```
 git submodule update --remote
 ```
 
-A full explanation of the submodule commands is out-of-scope of this document. Please refer to the following link to learn more:
+A full explanation of the submodule commands is out of scope of this document. Please refer to the following link to learn more:
 https://git-scm.com/book/en/v2/Git-Tools-Submodules
 
 
