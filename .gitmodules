@@ -1,0 +1,3 @@
+[submodule "astra"]
+	path = astra
+	url = https://github.com/orbbec/astra
