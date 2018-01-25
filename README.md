@@ -24,11 +24,10 @@ https://alitheon.atlassian.net/wiki/spaces/IE/pages/136806401/Point+Cloud+Data+A
 
 ### Astra SDK:
 
-The Orbbec Astra SDK is included as a submodule in this project. After you have cloned the repo, simply run the following two commands to fetch the submodule:
+The Orbbec Astra SDK is included as a submodule in this project. To initialize and update the submodule, run the following simple command while cloning the repo:
 
 ```
-git submodule init
-git submodule update
+git clone --recurse-submodules git@github.com:AlitheonDotCom/orbbec-astra-acquisition-tool.git
 ```
 
 To pull the latest version of the Astra SDK, you can update the submodule as follows:
@@ -36,13 +35,13 @@ To pull the latest version of the Astra SDK, you can update the submodule as fol
 ```
 git submodule update --remote
 ```
+*Note: If you pull the latest version of the submodule using the above command, please repeat the installation steps described below.*
 
 A full explanation of the submodule commands is out of scope of this document. Please refer to the following link to learn more:
 https://git-scm.com/book/en/v2/Git-Tools-Submodules
 
 ## Installation
-1. Clone/download the repo to your project folder.
-2. Using the submodule commands listed above, get the Astra SDK.
+1. Clone/download the repo to your project folder, using the above command.
 3. The SDK will be fetched inside the *astra* subdirectory.
 4. Copy the folder titled *AcquisitionTool* to  *astra/samples/sfml*. The *AcquisitionTool* folder contains our c++ code and the CMakeLists.txt file.
 5. Now go to *astra/samples/scripts* and copy the bash script titled *build_samples.sh* to *astra/samples* parent folder. Then, run the bash script using: `./build_samples.sh`.
