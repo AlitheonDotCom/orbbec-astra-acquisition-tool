@@ -108,16 +108,11 @@ dynamo/
 *.out
 *.app
 
-#
-# CMake
-#
+#Cmake build paths
+build*/
 
-CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
-cmake_install.cmake
-install_manifest.txt
-compile_commands.json
-CTestTestfile.cmake
+# LPP cache files
+.pp-modification-cache.cl
+
+# CMake generated Visual Studio script
+InstallVS.txt
