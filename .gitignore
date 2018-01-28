@@ -109,6 +109,7 @@ dynamo/
 *.app
 
 #Cmake build paths
+astra-build/
 build*/
 
 # LPP cache files

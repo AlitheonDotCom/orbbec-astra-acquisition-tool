@@ -42,14 +42,39 @@ https://git-scm.com/book/en/v2/Git-Tools-Submodules
 
 ## Installation
 1. Clone/download the repo to your project folder, using the above command.
-3. The SDK will be fetched inside the *astra* subdirectory.
-4. Copy the folder titled *AcquisitionTool* to  *astra/samples/sfml*. The *AcquisitionTool* folder contains our c++ code and the CMakeLists.txt file.
-5. Now go to *astra/samples/scripts* and copy the bash script titled *build_samples.sh* to *astra/samples* parent folder. Then, run the bash script using: `./build_samples.sh`.
-6. *Note:* Alternatively, you can also create a *build* folder and run the `cmake ..` command from inside the build folder, followed by `make && make install` command.
-7. The bash script will create executables in *astra/samples/build/bin*.
-8. To run the tool:
+2. The Astra repo also contains submodules which need to be initialized. Use the following commands to initialize those submodules:
 ```
-cd astra/samples/build/bin
+cd astra
+git submodule init
+git submodule update
+```
+3. Refer the *astra/.gitmodules* file to learn more about the astra dependencies.
+4. To build the Astra SDK, follow the following steps:
+```
+cd your/project/folder
+mkdir astra-build
+cd astra-build
+cmake ../astra
+make && make install
+```
+*Note: If CLISP is not installed on your computer, the make command will fail, use `brew install clisp` to install CLISP if that happens.
+5. If the above step is executed successfully, the build files will be written to *astra-build* folder. You will notice a folder titled *sdk* in the build folder.
+6. To install the tool, create a build folder inside the *tools* folder in the main project folder.
+```
+cd your/project/folder
+cd tools
+mkdir build
+cd build
+```
+7. Then run the *cmake* and *make* command as follows:
+```
+cmake ..
+make
+```
+8. A *bin* folder will be created inside the *build* folder, containing the executable for out tool. 
+9. To run the tool, simply do:
+```
+cd tools/build/bin
 ./AcquisitionTool
 ```
 
