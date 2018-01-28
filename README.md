@@ -48,7 +48,7 @@ cd astra
 git submodule init
 git submodule update
 ```
-3. Refer the *astra/.gitmodules* file to learn more about the astra dependencies.
+3. Refer to *astra/.gitmodules* file to learn more about the astra dependencies.
 4. To build the Astra SDK, follow the following steps:
 ```
 cd your/project/folder
@@ -57,7 +57,8 @@ cd astra-build
 cmake ../astra
 make && make install
 ```
-*Note: If CLISP is not installed on your computer, the make command will fail, use `brew install clisp` to install CLISP if that happens.
+*Note: If CLISP is not installed on your computer, the make command will fail, use `brew install clisp` to install CLISP if that happens.*
+
 5. If the above step is executed successfully, the build files will be written to *astra-build* folder. You will notice a folder titled *sdk* in the build folder.
 6. To install the tool, create a build folder inside the *tools* folder in the main project folder.
 ```
