@@ -83,14 +83,12 @@ cd tools/build/bin
 
 1. Make sure the camera is plugged in before running the tool.
 2. If everything goes well, you will be displayed with a window showing the depth stream from Astra.
-3. Astra can only display one data stream at a time. Any attempts to stream the *ColorStream* data were futile. See the following link explaining the issue:
-https://3dclub.orbbec3d.com/t/color-stream-issue-on-astra-pro-under-mac-osx/795
-4. The bottom of the window displays the X, Y and Z values for the current cursor position. As you move around the mouse, these values wil be updated.
-5. Press **H/h** for the help menu.
-6. To acquie the PCD file, simply press **A/a**. The depth stream will pause, prompting the user to enter the name of the pcd file at the console.
-7. After the user has entered the file name, a PCD file will be saved (in the same location as the executable). 
-8. The depth stream will resume after that.
-9. To close the tool, simply press **Control+C** or hit **Esc**.
+3. The bottom of the window displays the X, Y and Z values for the current cursor position. As you move around the mouse, these values wil be updated.
+4. Press **H/h** for the help menu.
+5. To acquie the PCD file, simply press **A/a**. The depth stream will pause, prompting the user to enter the name of the pcd file at the console.
+6. After the user has entered the file name, a PCD file will be saved (in the same location as the executable). 
+7. The depth stream will resume after that.
+8. To close the tool, simply press **Control+C** or hit **Esc**.
 
 # Output
 
@@ -109,5 +107,6 @@ An internal OpenGL call failed in Texture.cpp (391) : GL_INVALID_OPERATION, the 
 ```
 2. Closing the depth viewer window gives the `Abort trap: 6` error on some occasions. Whenever this error occurs, we get the following warning window on Mac:
 *SimpleDepthViewer-SFML quit unexpectedly.* 
-
+3. Astra can only display one data stream at a time. Any attempts to stream the *ColorStream* data were futile. See the following link explaining the issue:
+https://3dclub.orbbec3d.com/t/color-stream-issue-on-astra-pro-under-mac-osx/795
 
