@@ -99,3 +99,15 @@ The tool provides us with PCD files of ASCII format. The files are saved in the 
 To learn more about PCD files, see the following link:
 http://pointclouds.org/about/
 
+# Known issues
+
+Below is a list of the issues encountered while using the Astra SDK:
+
+1. The full-screen toggle function sometimes displays a red depth viewer window with no content. When that happens, the console displays the following error:
+```
+An internal OpenGL call failed in Texture.cpp (391) : GL_INVALID_OPERATION, the specified operation is not allowed in the current state.
+```
+2. Closing the depth viewer window gives the `Abort trap: 6` error on some occasions. Whenever this error occurs, we get the following warning window on Mac:
+*SimpleDepthViewer-SFML quit unexpectedly.* 
+
+
